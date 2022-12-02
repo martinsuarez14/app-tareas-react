@@ -10,8 +10,9 @@ body {
   align-items: center;
   background-color: transparent;
   background: rgb(255,255,255);
-background: linear-gradient(184deg, rgba(255,255,255,1) 0%, rgba(45,91,253,1) 100%);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(15,28,112,1) 93%);
 }
+
 h1 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #E32636;
