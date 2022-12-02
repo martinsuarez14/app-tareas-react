@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&display=swap');
+
+body {
+  background-image: url(../../public/cool-background.png);
+}
+.titulo {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  background: rgb(255,255,255);
+background: linear-gradient(184deg, rgba(255,255,255,1) 0%, rgba(45,91,253,1) 100%);
+}
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #E32636;
+}
+
+
+.todoContainer {
+  width: 500px;
+  margin: 100px auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.todoCreateForm {
+  display: flex;
+  gap: 5px;
+}
+
+.todoInput {
+  flex-grow: 1;
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: solid 1px #999;
+}
+
+/*
+.buttonCreate {
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(26, 76, 169);
+  color: white;
+  padding: 10px 20px;
+}*/
+
+.buttonCreate {
+  box-shadow: -2px 1px 17px -23px #3e7327;
+  background: linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+  background-color: #77b55a;
+  border-radius: 14px;
+  border: 1px solid #1b380c;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 12px 30px;
+  text-decoration: none;
+  text-shadow: 0px 0px 12px #5b8a3c;
+}
+
+.buttonCreate:hover {
+  background: linear-gradient(to bottom, #72b352 5%, #1e53e4 100%);
+  background-color: #72b352;
+}
+
+.buttonCreate:active {
+  position: relative;
+  top: 1px;
+}
+
+.todosContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.todo {
+  padding: 10px;
+  background-color: white;
+}
+
+.todoTitle {
+  flex: 1;
+  font-size: 20px;
+}
+
+.todoUpdateForm,
+.todoInfo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.button {
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(42, 122, 221);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.buttonDelete {
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(169, 26, 26);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+@media  screen and (max-width: 540px) {
+  
+  .todoCreateForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .todoInput {
+    max-width: 70%;
+    height: 30px;
+    min-width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .todosContainer {
+    display: flex;
+    width: 80%;
+    align-items: stretch;
+  }
+
+  .todoContainer {
+    align-items: center;
+
+  }
+}
